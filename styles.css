@@ -1,0 +1,59 @@
+* {
+    box-sizing:border-box;
+}
+#container {
+    max-width: 60rem;
+    width: 80%;
+    margin: auto;
+}
+
+#inputs {
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.selection {
+    font-weight:bold;
+    background-color:lightyellow;
+    border: .5px dashed black;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-left: calc(-0.25rem - 1px);
+    margin-right: calc(-0.25rem - 1px);
+}
+
+.cityText {
+    font-size: large;
+    font-family: "Consolas","Inconsolata","Courier New", Courier, monospace;
+}
+
+#problem {
+    border: 1px solid green;
+    padding: 1rem;
+
+}
+
+#solutions {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-top: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content:  space-between;
+}
+
+.solutionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.solutionBox {
+    display: none;
+}
+
+#orderStatus {
+    font-family:initial;
+}

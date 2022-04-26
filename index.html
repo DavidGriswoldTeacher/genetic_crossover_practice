@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Crossover Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Practice Crossover for IB CS Paper 3 2022</h1>
+        <div id="inputs">
+            <label for="numElememntsInput">How many cities?</label>
+            <input value="10" id="numElementsInput" type="number" min="5" max="15">
+            <button id="generate">Generate Parents and Crossover</button>
+        </div>
+        <p>The parents are below. If you intend to practice Partially Mapped or Order crossover, use the highlighted
+            sequence as your random subsequence.</p>
+        <div class="cityText" id="problem">
+
+            <strong>P1:</strong>
+            <span class="cityText" id="p1Text">A B C <span class="selection">D E F G H</span> I J</span><br>
+            <strong>P2:</strong> <span class="cityText" id="p2Text">A B C D E F G H I J</span><br>
+        </div>
+        <div id="solutions">
+            <div class="solutionContainer" id="showPMXBox">
+                <button id="showPMX">
+                    Show Partialy Mapped Crossover
+                </button>
+                <div class="solutionBox" id="PMX">
+                    <div class="solution" id="pmxStatus">
+
+                    </div>
+                </div>
+            </div>
+            <div class="solutionContainer" id="showOrderBox">
+                <button id="showOrder">
+                    Show Order Crossover
+                </button>
+                <div class="solutionBox" id="Order">
+                    <div class="solution cityText" >
+                        <strong>F1:</strong> <span class="cityText" id="orderText">A B C D E F G H I J</span><br>
+                    </div>
+                    <div id="orderStatus">
+
+                    </div>
+                </div>
+            </div>
+            <div class="solutionContainer" id="showCycleBox">
+                <button id="showCycle">
+                    Show Cycle Crossover
+                </button>
+                <div class="solutionBox"  id="Cycle">
+                    <div class="solution cityText">
+                        <strong>F1:</strong> <span class="cityText" id="pmxText">A B C D E F G H I J</span><br>
+                    </div>
+                    <div id="cycleStatus">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
