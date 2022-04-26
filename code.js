@@ -73,10 +73,11 @@ function calculatePMX(p1, p2, start, length) {
                 statusHTML += getSequenceHTML(p2,p2location,1) + "<br><br>";
                 statusHTML += "<strong class='cityText'>F1: </strong>";
                 statusHTML += getSequenceHTML(child, p2location, 1) + "<br></br>";       
-                statusHTML += "Since the spot is unavailable, we have to cycle to the next letter, ";
+                statusHTML += "Since the spot is unavailable, we use the map shown above to map to ";
                
                 mappedLetter = p1[p2location];
-                statusHTML += "<span class='cityText'>"+ mappedLetter + "</span></p>"
+                statusHTML += "<strong class='cityText'>"+ mappedLetter + "</strong>, which we will search for now.</p>"
+        
                 p2location = p2.indexOf(mappedLetter);
             }
             statusHTML += "<strong class='cityText'>P1: </strong>";
@@ -85,7 +86,7 @@ function calculatePMX(p1, p2, start, length) {
                 statusHTML += getSequenceHTML(p2,p2location,1) + "<br><br>";
                 statusHTML += "<strong class='cityText'>F1: </strong>";
                 statusHTML += getSequenceHTML(child, p2location, 1) + "<br></br>";     
-            statusHTML += "This spot is available so we can put <strong class='cityText'>" 
+            statusHTML += "This spot is available so we can put our original letter <strong class='cityText'>" 
                 + lettersToFill[i] 
                 + " </strong>there!<br><br>";
             child[p2location] = lettersToFill[i];
