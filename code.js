@@ -35,7 +35,8 @@ function generate() {
 function showHide(e, which) {
     let btn = e.target;
     let area = document.querySelector("#"+which);
-    if (area.style.display == "none") {
+    console.log(area.style.display);
+    if (area.style.display == "" || area.style.display == "none") {
         area.style.display = "block"
         btn.innerText = "Hide " + btn.innerText.substring(5);
     }else{
